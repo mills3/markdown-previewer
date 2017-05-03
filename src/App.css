@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Bevan');
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr 1fr;
+  grid-gap: 2vmin;
+  text-align: center;
+  background: linear-gradient(#fff, #829db3);
+  padding: 0 2vmin 2vmin;
+  overflow: hidden;
+}
+
+.areas {
+  overflow-y: scroll;
+  padding: 0.5em;
+  box-shadow: 1vmin 1vmin 1vmin #000;
+}
+
+.title {
+  margin: 0.5em 1em;
+  font-size: 8vmin;
+  font-family: 'Bevan', Arial, sans-serif;
+  color: #4478a3;
+}
+
+.input {
+  margin: 0;
+}
+
+.output {
+  background: #fff;
+  text-align: left;
+}
+
+@media (orientation: landscape) {
+  .app {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .title {
+    grid-column: 1/3;
+  }
+}
